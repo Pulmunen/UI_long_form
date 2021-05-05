@@ -1,0 +1,511 @@
+
+/* =================
+    Layout
+    ================= */
+
+body {
+    font-size: 1.125rem;/*Remember the base font size is on the html! The browser will determine it.*/
+    /* font-family: 'montserrat', sans-serif; */
+    font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
+    background-color:#fff;
+    color: var(--dark-dark-lilac);
+    font-weight:400;
+    line-height:1.6;
+}
+
+
+main {
+    padding: 2em 0;
+    background-color:white;
+    width:100%;
+    margin:0;
+}
+
+
+
+/*Header*/
+
+/* =================
+    Links - general
+    ================= */
+    
+/*This is the correct order for links. */
+a:link, a:visited{
+/*color: #ffe600;*/
+color: var(--yellow);
+}
+
+a:focus {
+    color:var(--dark-yellow);
+}
+
+a:hover{
+    /*Can be the same as focus*/
+    color:var(--dark-yellow);
+}
+
+a:active {
+    color:var(--light-lilac);
+}
+/* =================
+    ELement layout
+    ================= */
+    
+img {
+    max-width: 100%;
+    display: block;
+}
+/* Replace!*/
+
+
+
+/* =================
+   form
+   ================= */
+   
+   .email-collector {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 2em;
+}
+
+/*Border has a 3D is default*/
+input,
+.btn {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+input {
+    /*Text properties aren't inherited on forms, exceptionally.*/
+    font-family: inherit;
+    text-align: inherit;
+    margin-bottom: .75em;
+    padding: .25em;
+    border: 1px solid #404040;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 1.5em;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(to left, #ff713b, #ffa51d);
+    color: white;
+}
+/*
+
+    .btn-primary {
+        background-color: #404040;
+        color: white;
+        transition: background-color 250ms;
+    
+    }
+    
+    .btn-primary:hover {
+        background-color: #F18119;
+    }
+    */
+
+
+
+/*!@!@!@!@!UI COURSE EXAMPLES!@!@!@!@!@*/
+
+/*White space cards*/
+
+.white-space-container {
+    background: #eeeeee;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, auto); 
+    height:50vh;
+}
+
+
+.card {
+    background: white;
+    padding: .2em;
+    width: 60%;
+}
+
+.white-space-container > h1, 
+.white-space-container > p {
+    margin: 0;
+}
+.white-space-container > h1 {
+    font-size: 1.4em;
+}
+.white-space-container > p {
+    font-size: .8em;
+}
+
+/* Overwritten CSS */ 
+
+.secondary {
+    padding: 1.9em;
+}
+
+.secondary h1 {
+    margin-bottom: .5em;
+}
+
+.secondary p {
+    line-height: 1.5em;
+}
+
+/*watermark simple design*/
+.watermark-container {
+    padding: 4em;
+    width:850px;
+    height:450px;
+    margin: 0 auto;
+    overflow:hidden;
+    background-color:white;
+    position:relative;
+    z-index:-3;
+}
+
+.watermark-span {
+    font-size: .4em;
+    background: #DEDEDE;
+    color: black;
+    padding: .2em .4em;
+    border-radius: 1em;
+    display: inline-block;
+    
+}
+
+.watermark-span:before {
+    content: '1:30 PM';
+    font-size: 10em;
+    position: absolute;
+    color: #F4F4F4;
+    z-index:-1;
+    white-space: nowrap;
+    left: 30%;
+    top: 20%;
+}
+.watermark-h1 {
+    color: #0165E7;
+    font-size: 3em;
+}
+
+.watermark-p {
+    font-size: 1.3em;
+    padding-left: 2em;
+    border-left: 4px solid gray;
+}
+
+
+
+/*Stripey gradient*/
+
+.stripey-container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background: linear-gradient(322deg, rgba(43,46,39,1) 29%, rgba(28,28,28,1) 29%, rgba(28,28,28,1) 40%, rgba(43,46,39,1) 40%, rgba(43,46,39,1) 48%, rgba(28,28,28,1) 48%, rgba(28,28,28,1) 92%, rgba(113,174,33,1) 92%, rgba(113,174,33,1) 100%);
+    color: white;
+    width: 850px;
+    height: 50vh;
+    margin:0 auto;
+    padding:2em;
+    color:white;
+    position:relative;
+    z-index:-3;
+}
+
+.stripey-h1 {
+    margin-top: 0;
+    font-size: 2.4em;
+}
+
+.stripey-p {
+    font-size: 1.2em;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+}
+
+.stripey-span {
+    position: relative;
+}
+
+.stripey-span:before {
+    position: absolute;
+    content: '';
+    height: .2em;
+    width: 80%;
+    bottom: .1em;
+    z-index:-1;
+    background: #71AE21; 
+}
+
+/*Time & space*/
+
+.space-container {
+    display:grid;
+    align-content:start;
+    grid-template-columns: 1fr 2.5fr;
+    grid-gap:5em;
+    padding-top:5em;
+    color: white;
+    width: 850px;
+    height: 80vh;
+    margin:0 auto;
+    color:white;
+    position:relative;
+    z-index:-3;
+    background: #000 url('./nasa-unsplash.jpg');
+    background-size: cover;
+    background-position: 0px -50px; 
+}
+
+.space-h1 {
+  margin-top:0;
+    font-size: 3.5em;
+    position:relative;
+    width:100%;
+    line-height:1.2;
+}
+
+.space-h1:before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: white;
+    left: -1em;
+    top: 10px;
+    height: 100%;
+
+}
+
+.space-p {
+    font-size: 1em;
+    margin-top:0.4em;
+    margin-right: .5em;
+    text-transform: uppercase;
+    text-align:right;
+}
+
+.space-span {
+    position: relative;
+}
+
+.space-span:before {
+    position: absolute;
+    content: '';
+    height: .2em;
+    width: 80%;
+    bottom: .1em;
+    z-index: -1;
+    background: #e88a62; 
+}
+
+/*shadows*/
+.shadow-card {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2em;
+    background: white;
+    border-radius: .4em;
+    text-align: center;
+}
+
+.shadow-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.shadow-desc {
+    line-height: 1.7em;
+    font-size: .9em;
+    color: #4C4C4C;
+}
+
+.shadow-a {
+    text-decoration: none;
+    background: #005BF7;
+    color: white;
+    display: inline-block;
+    padding: .7em 2em;
+    border-radius: 2em;
+    margin-top: 1em;
+}
+
+/*soft shadow*/
+.soft-shadow-card {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2em;
+    background: white;
+    border-radius: .4em;
+    text-align: center;
+    box-shadow: 0px 4px 3px rgba(0,0,0,0.4);
+}
+/* box-shadow: horizontal vertical blur color; 
+       box-shadow: 10px 10px 10px rgba(0,0,0,0.5); */
+
+.soft-shadow-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.soft-shadow-desc {
+    line-height: 1.7em;
+    font-size: .9em;
+    color: #4C4C4C;
+}
+
+.soft-shadow-a {
+    text-decoration: none;
+    background: #005BF7;
+    color: white;
+    display: inline-block;
+    padding: .7em 2em;
+    border-radius: 2em;
+    margin-top: 1em;
+}
+
+/*define container*/
+
+.super-define-container {
+    
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: #E1EAD3;
+}
+
+.define-container-card {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2em;
+    background: #E1EAD3;
+    border-radius: .4em;
+    text-align: center;
+    box-shadow: 10px 10px 30px rgba(49,81,0,.1);
+}
+/* box-shadow: horizontal vertical blur color; 
+       box-shadow: 10px 10px 10px rgba(0,0,0,0.5); */
+
+.define-container-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.define-container-desc {
+    line-height: 1.7em;
+    font-size: .9em;
+    color: #4C4C4C;
+}
+
+.define-container-a {
+    text-decoration: none;
+    background: #005BF7;
+    color: white;
+    display: inline-block;
+    padding: .7em 2em;
+    border-radius: 2em;
+    margin-top: 1em;
+}
+/*Coloured shadow*/
+.super-coloured-shadow {
+    height: 100vh;
+   display: grid;
+   place-content: center;
+   background: #d1e8ee;   
+}    
+.coloured-shadow-card {
+   width: 60%;
+   margin: 0 auto;
+   padding: 2em;
+   background: white;
+   border-radius: .4em;
+   text-align: center;
+   box-shadow: 10px 10px 30px rgba(0, 109, 175,.1);
+}
+/* box-shadow: horizontal vertical blur color; 
+      box-shadow: 10px 10px 10px rgba(0,0,0,0.5); */
+
+.coloured-shadow-title {
+   font-weight: bold;
+   font-size: 1.2em;
+   margin-top: 0;
+}
+
+.coloured-shadow-desc {
+   line-height: 1.7em;
+   font-size: .9em;
+   color: #4C4C4C;
+}
+
+.coloured-shadow-a {
+   text-decoration: none;
+   background: #005BF7;
+   color: white;
+   display: inline-block;
+   padding: .7em 2em;
+   border-radius: 2em;
+   margin-top: 1em;
+}
+/*Multi layered shadow*/
+
+.super-multi-shadow {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: white;
+}
+
+.multi-shadow-card {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2em;
+    background: white;
+    border-radius: .4em;
+    text-align: center;
+    box-shadow: 0px 10px 10px rgba(0,0,0,.1);
+}
+
+.multi-shadow-card:hover {
+    box-shadow:
+        0 3.1px 2.7px rgba(0, 0, 0, 0.13),
+        0 7.8px 6.9px rgba(0, 0, 0, 0.09),
+        0 15.9px 14.2px rgba(0, 0, 0, 0.072),
+        0 32.9px 29.2px rgba(0, 0, 0, 0.058),
+        0 90px 80px rgba(0, 0, 0, 0.04);
+
+}
+
+.multi-shadow-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.multi-shadow-desc {
+    line-height: 1.7em;
+    font-size: .9em;
+    color: #4C4C4C;
+}
+
+.multi-shadow-a {
+    text-decoration: none;
+    background: #005BF7;
+    color: white;
+    display: inline-block;
+    padding: .7em 2em;
+    border-radius: 2em;
+    margin-top: 1em;
+}

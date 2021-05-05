@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-ui.css">
+    <title>UI design course notes</title>
+</head>
+<body>
+<main>
+    <h1>UI design course</h1>
+    <ul>
+        <li>White space</li>
+        <li>Colour</li>
+        <li>Contrast</li>
+        <li>Scale</li>
+        <li>Alignment</li>
+        <li>Typography</li>
+        <li>Visual hierarchy</li>
+    </ul>
+<h2>White space/negative space</h2>
+<p>Give structure</p>
+<p>Padding and margin are primary properties.  Suggesting using 1-2 em padding.</p>
+<p>Also e.g. grid-gap</p>
+<div class="white-space-container">
+    <div class="card">
+        <h1>My Title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="card secondary">
+        <h1>My Title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+</div>
+</main>
+</body>
+</html>
+
+<h2>Alignment</h2>
+
+<h2>Contrast</h2>
+<p>For meaningful elements.</p>
+<p>The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for large text which should have a contrast ratio of at least 3:1.</p>
+<p>Use tools</p>
+<h2>Scale</h2>
+<p>Includes visual hierarchy</p>
+
+<h2>Typography</h2>
+<p>
+    <ul>
+        <li>Font choices</li>
+        <li>Visual hierarchy</li>
+        <li>font size (scale)</li>
+        <li>Alignment</li>
+        <li>Letter spacing and line height</li>
+        <li>Font styles</li>
+        <li>Colour and contrast</li>
+    </ul>
+</p>
+<p>Degres of separation</p>
+<h2>Colour</h2>
+<p>Light mode vs dark mode</p>
+<p>Avoid absolute black.  Use for eg 1c1c1c.</p>
+<h2>Watermark design example</h2>
+<div class="watermark-container">
+    <h1 class="watermark-h1">Client Meeting <span class="watermark-span">1:30 PM</span></h1>
+    <p class="watermark-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+<h2>Stripey gradient design</h2>
+
+    <div class="stripey-container">
+        <p class="stripey-p">Today's Article</p>
+        <h1 class="stripey-h1">A Place in <span class="stripey-span">Time</span> and <span class="stripey-span">Space</span></h1>
+    </div>
+   <p>You can also use an image as a bit of a watermark background.</p>
+
+
+<h2>Time and space 2 column image watermark.</h2>
+<div class="space-container">
+    <p class="space-p">Today's Article</p>
+    <h1 class="space-h1">A Place in <span class="space-span">Time</span> and <span class="space-span">Space</span></h1>
+</div>
+<h2>Shadow</h2>
+<div class="shadow-card">
+    <p class="shadow-title">My Card</p>
+    <p class="shadow-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+    <a class="shadow-a"href="#">Call to Action</a>
+</div>
+<h2>soft shadow</h2>
+<div class="soft-shadow-card">
+    <p class="soft-shadow-title">My Card</p>
+    <p class="soft-shadow-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+    <a class="soft-shadow-a" href="#">Call to Action</a>
+</div>
+
+<h2>define container</h2>
+<div class="super-define-container">  
+    <div class="define-container-card">
+        <p class="define-container-title">My Card</p>
+        <p class="define-container-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <a class="define-container-a" href="#">Call to Action</a>
+    </div>
+  </div>  
+  <h2>Coloured shadow</h2>
+  <div class="super-coloured-shadow">
+    <div class="coloured-shadow-card">
+        <p class="coloured-shadow-title">My Card</p>
+        <p class="coloured-shadow-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <a class="coloured-shadow-a" href="#">Call to Action</a>
+    </div>
+  </div>  
+  <h2>Multi layered shadow</h2>
+  <a href="https://brumm.af/shadows"></a>
+
+  <div class="super-multi-shadow">
+    <div class="multi-shadow-card">
+        <p class="multi-shadow-title">My Card</p>
+        <p class="multi-shadow-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <a class="multi-shadow-a" href="#">Call to Action</a>
+    </div>
+  </div>
+
+  <div class="container__heading__h2 h2--counter">
+    <h2 class='heading__2'><span class="heading__span">Forms</span></h2> 
+</div>
+
+
+<div class="container__text">
+    <form class="email-collector" action="#" method="POST">
+        <input type="text" required placeholder="first name">
+        <input type="email" required  placeholder="email">
+        <button class="btn btn-primary" type="submit">Register</button>
+    </form>
+    <p>You can wrap input inside label, quicker than doing 'for'</p>
+    <p>Look up form action!</p>
+    <p>Form child elements are all inline!</p>
+    <p>Forms have a lot of defaults, and browsers style them differently.There is a lot of overriding to be done.</p>
+    <p>You can use attribute selector [type="text"].  You can also e.g. select things that have placeholders set in this way.</p>
+    
+    <ul>
+        <li>Avoid placeholder values as labels</li>
+        <li>Avoid unnecessarily long forms.  Use multi-step forms.</li>
+        <li>Do inline form validation</li>
+        <li>Custom form elements must be accessible.</li>
+    </ul>    
+</div>    
+
+<div class="container__heading__h2 h2--counter">
+    <h2 class='heading__2'><span class="heading__span">Gradients</span></h2> 
+</div>
+
+<div class="container__text">
+    <a href="https://cssgradient.io">Gradient generator link</a>
+    <img src="file:///C:/Users/pulmu/Documents/UI%20spec%20projects/Gradient-watermark.png" alt=""> 
+</div>
