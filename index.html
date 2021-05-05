@@ -1,0 +1,665 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive version of Scrimba notes</title>
+    <link rel="stylesheet" href="normalise.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid">
+
+    <header id ="header--sticky">
+
+        <div class="site--branding">
+            <div class="logo-container">
+                <img class="logo" src="./images/melogo.svg" alt="">
+            </div>
+            <div class="branding-container">
+                <h1><a class="site-name">Company</a></h1>
+                <p class="tagline">Tagline</p>
+            </div>
+
+        </div>
+            
+        <svg height="32px" id="menu-btn" class="open" viewBox="0 0 32 32">
+            <path fill="white" d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+        </svg>
+            
+        <nav id="nav">
+            <svg viewBox="0 0 24 24" id="exit-btn" class="exit">
+                 <path id="exit" fill="white" d="M14.8,12l3.6-3.6c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L12,9.2L8.4,5.6c-0.8-0.8-2-0.8-2.8,0   c-0.8,0.8-0.8,2,0,2.8L9.2,12l-3.6,3.6c-0.8,0.8-0.8,2,0,2.8C6,18.8,6.5,19,7,19s1-0.2,1.4-0.6l3.6-3.6l3.6,3.6   C16,18.8,16.5,19,17,19s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L14.8,12z" />
+            </svg>
+                
+            <ul class="nav__menu">
+                <li class="nav__menu__item"><a href="#">Home</a></li>
+                <li class="nav__menu__item active"><a href="#">About</a></li>
+                <li class="nav__menu__item"><a class="nav__menu__item" href="ui_design.html">UI design</a></li>
+
+            </ul>
+        </nav>
+    </header><!--END OF HEADER-->
+    <!-- <div class="sidebar__container"> -->
+        <!--sidebar-->
+        <div class="sidebar"><!--container-->
+ 
+            <input type="checkbox" id="show-hide__contents">
+            <label id = "#show-hide__label"for="show-hide__contents">Contents</label>
+            <div class="toc__container">
+                <div class="toc__list">
+                </div>
+            </div> 
+        </div>
+    <!-- </div> -->
+        <!--MAIN-->
+        <div class="main">
+            <div class="container container__heading__h2 h2--counter">
+                <!--Block, inline elements and inline block elements-->
+                <h2 class='heading__2 '>
+                    <span class="heading__span">Block, inline and inline block elements
+                    </span>
+                </h2> 
+            </div>
+    
+            <div class="container container__text">
+                <p>Block-level elements are 100% of the parent by default, but you can control the width of it.</p>
+                <p>They always stack one on top of the other.</p>
+                <p>Avoid setting height if you can.  Elements will generally grown to fit their content. Text can overflow out of height.</p>
+            
+                <p>Most elements are block level elements by default</p>
+                <p>They have a width of 100% of their parent.  They have a height of 0. Their height grows to match the content.  They stack one on top of the next.  The width and height can be controlled.</p>
+                <p>Default height behaviour of block element: grows to fit the content (having had an original height of 0).  Try to avoid setting height (overflow and hiding). See what the html structure is when troubleshooting height/overflow issues</p>
+                <p>Added a dummy paragraph</p>
+            </div>
+    
+            <div class="container container__heading__h3">
+                 <!--Block, inline elements and inline block elements-->
+                <h3 class='heading__3'>
+                    <span class="heading__span">Block
+                    </span>
+                </h3> 
+            </div>
+    
+            <div class="container container__text">
+                <p>Design elements</p>
+                <ul>
+                    <li>paragraphs</li>
+                    <li>headings</li>
+                    <li>lists and list items</li>
+                    <li>div</li>
+                </ul>
+                <p>Semantic elements</p>
+                <ul>
+                    <li>header</li>
+                    <li>footer</li>
+                    <li>main</li>
+                    <li>section</li>
+                    <li>etc.</li>
+                </ul>
+                <p>Inline elements stay within the flow</p>
+                <ul>
+                    <li>Links</li>
+                    <li>strong</li>
+                    <li>em</li>            
+                    <li>span</li>
+                    <li>Images (sort of)</li>
+                </ul>
+                <p>You can only nest other inline elements inside inline elements.</p>
+                <p>They will only respect margin, padding and borders which are placed on the left or the right side, and not the top and bottom.  Top and bottom padding etc. will be applied, but other elements completely ignore it.</p>
+            </div>
+    
+            <!--Block, inline elements and inline block elements-->
+    
+            <div class="container container__heading__h3">
+                <h3 class='heading__3'>
+                    <span class="heading__span">Inline-block
+                    </span>
+                </h3> 
+           </div>
+    
+           <div class="container container__text">
+                <p>Most commonly for buttons. Sometimes we need something which can stay in line which we can set margins and padding on.</p>
+                <p>Lets you keep elements inline but lets you have margin top and bottom, padding top and bottom.</p>
+           </div>
+    
+            <div class="container container__heading__h3">
+                <!--Block, inline elements and inline block elements-->
+               <h3 class='heading__3'>
+                   <span class="heading__span">Button links</span>
+                </h3> 
+           </div>
+    
+           <div class="container container__text">
+                <p>Put the class directly on your link(a).This is so that you don't have to be completely accurate clicking on the text and the hover will work.</p>
+                <p>Always use padding to create the "size of the button and not width and height.</p>
+                <p>The padding left and right needs to be a bigger number than theh padding on the top and bottom.</p>
+                <p>In general, use a 1:2.5 ratio for the top and bottom, but it really depends on the button.</p>
+           </div>
+    
+           <div class="container__heading__h3">
+            <!--Block, inline elements and inline block elements-->
+                <h3 class='heading__3'>
+                    <span class="heading__span">Image elements special</span>
+                </h3> 
+            </div>
+    
+            <div class="container container__text">
+                <p>An example of alt text: "A very cute cat". You don't need "an image of.....". Decorative elements don't need to include content for the alt attribute, but leave an empty alt attribute.</p>
+                <p>Image widths: you need to set a width on image.  They are actually inline elements.  They are not defaulting to 100% width, they are defaulting to their own size. Usually you want to fit it to 100% (i.e. the width of the parent).</p> 
+                <p>Don't set a height if you set a width because the proportions will be wrong.</p>
+                <p>Set image display to block.</p>
+                <p>The element img is a replaced element.  Contrast this with source, which is content, so it behaves differently.</p>
+            </div>
+    
+            <div class="container container__heading__h2 h2--counter">
+            <!--Block, inline elements and inline block elements-->
+                <h2 class='heading__2 '>
+                    <span class="heading__span">Typographical elements</span>
+                </h2> 
+            </div>
+    
+            <div class="container container__heading__h3">
+                <h3 class='heading__3'>
+                    <span class="heading__span">Things to establish up front</span>
+                </h3> 
+            </div>
+    
+            <div class="container container__text">
+                <p>Base font-size and base line-height. For example, establysing a font-size of 16px and a line-height of 24px gives: font:1em/1.5.  This allows you to set of the entire project's vertical rhythm in one go:
+                define spacing as 1.5 and margin-bottom on all block-level elements as 1.5.  It should also overcome problems with collapsing margins.</p>
+                <p>Set body margin to 0</p>
+                <p>Do all typography css before touching the other layout.</p>
+
+            </div>
+    
+            <div class="container container__heading__h3">
+                <h3 class='heading__3'>
+                    <span class="heading__span">Font properties</span>
+                </h3> 
+            </div>
+       
+            <div class="container container__text">
+                <p>font-family, font-size, font-weight, font-style.  text-align, text-direction, text-transform, color, line-height</p>
+                <p>This is to indicate a <strong>strong</strong> tag in html. The strong tag has semantic meaning and makes it more important </p>
+                <p>This is to indicate an <em>em</em> tag. This has stress emphasis and is generally in itallic. We are stressing this word (syntactic stress).</p>
+                <p>A span element has no default styling and no semantic meaning.</p>
+                <p>Trick with rgba: colour text with it, so it matches the background.</p>
+                <p>Background blend mode is good for making contrast for text. Combine with a background image linear gradient<p>       
+            </div>
+    
+            <div class="container container__heading__h3">
+                <h3 class='heading__3'>
+                    <span class="heading__span">Font stacks</span>
+                </h3> 
+            </div>
+       
+            <div class="container container__text">
+                <p>To use a font stack, disable all calls for Google or other web fonts. E.g. remove @import, comment out line in functions.php, etc.
+                    Go through stylesheet s and replace all elements containing web fonts with your system font stack</p>
+                <p>This is to indicate a <strong>strong</strong> tag in html. The strong tag has semantic meaning and makes it more important </p>
+                <p>System font stack examples:</p>
+                <p>From Medium 2015:<br>
+                    <span class="codetype">font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;</span>
+                    </p>
+                <p>2017 Booking.com:<br>
+                    <span class="codetype">font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;</span></p>   
+            </div> 
+
+            <div class="container container__heading__h3">
+                <h3 class='heading__3'>
+                    <span class="heading__span">Fonts in practice</span>
+                </h3> 
+            </div>
+            <div class="container container__text">
+                <p>Specify all font weights and sizes or use a variable font (speeds loading).</p>
+                <p>Use rel=preload for font.</p>
+                <p>Use WOFF2 format, with WOFF as fallback.</p>
+                <p>Combine google fonts in stylesheet link ref.</p>
+                <p>To fix flash of invisible text in Google Fonts, adding “&display=swap” at the end of the URL will fix this issue.</p>
+                <p>Before adding swap: <br>
+                    link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet"</p>
+                <p>After adding swap: <br>
+                    link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"</p>
+
+            </div>
+            <div class="container container__heading__h3">
+                <h4>
+                    <span class="heading__span">Default fonts</span>
+                </h4> 
+            </div>
+            <div class="container container__text">
+                        <div class="table__container">
+                            <div class="table__row table__row__heading">
+                                <div class="table__cell">Font</div>
+                                <div class="table__cell">OS</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__cell">BlinkMacSystemFont(San Fransisco)</div>
+                                <div class="table__cell">macOS Chrome</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__cell">Segoe UI</div>
+                                <div class="table__cell">Windows (Vista onwards)</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__cell">Roboto</div>
+                                <div class="table__cell">Android, Chrome OS</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__cell">Oxygen/Oxygen-Sans</div>
+                                <div class="table__cell">KDE</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__cell">Fira Sans</div>
+                                <div class="table__cell">Firefox OS</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__cell">Droid Sans</div>
+                                <div class="table__cell">Android pre-Ice Cream Sandwich</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__cell">Ubuntu</div>
+                                <div class="table__cell">Ubuntu</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__cell">Cantarell</div>
+                                <div class="table__cell">GNOME</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__cell">Helvetica Neue</div>
+                                <div class="table__cell">macOS versions</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__cell">Arial</div>
+                                <div class="table__cell">All</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__cell">sans-serif</div>
+                                <div class="table__cell">All</div>
+                            </div>
+            
+                        </div>
+            
+            </div>
+
+            <div class="container container__heading__h3">
+                <h3 class='heading__3'>
+                    <span class="heading__span">Fonts and inheritance</span>
+                </h3> 
+            </div>
+       
+            <div class="container container__text">
+                <p>Font size, colour, etc, that would be on paragraphs, set these on the body, not the p. because it affects other elements too (lists, etc.).</p>
+                <p>If you set a pixel size for all text as a default, your H1-h6 will be affected, unless you set them separately as pixel sizes or other absolutes.</p>
+                <p>Inheritance applies mostly to type.  Most type-related properties are inherited.  We can set the color for each section and it will apply to everything within that section.</p>
+            </div>
+    
+            <div class="container container__heading__h3">
+                <h4>
+                    <span class="heading__span">Overwriting inheritance</span>
+                </h4> 
+            </div>
+       
+            <div class="container container__text">
+                <p>Why don't links inherit, even though other inline elements like strong and em do? It's because they already have a default style on them.  they do inherit properties, but not the default styles that make them look like links (colour, text decoration)</p>
+                <p>Headings don't inherit font weight, because they have some default styling on them already.  You can overwrite them.</p>
+                <p>You can give a value of 'inherit' to inherit from the parent.</p>
+            </div>
+    
+            <div class="container container__heading__h2 h2--counter">
+                <h2 class='heading__2 '>
+                    <span class="heading__span">styling links</span>
+                </h2> 
+            </div>
+       
+            <div class="container container__text">
+                <p>Style 'a'. Links have different states that we can style.</p>
+                <p>Default 'link' state a:link</p>
+                <p>Visited state a:visited</p>
+                <p>focus state a:focus</p>
+                <p>Hover state a:hover</p>
+                <p>active a:active</p>
+                <p>Mostly you won't bother with visited links on your own site.  They are usually for off site links.</p>
+                <p>The correct order is in the css. But here is an alternative. 2 styles a in one and hover and focus in the other.:<br>
+                a{}, a:hover, a:focus{}</p>
+            </div>
+            
+                 <!--Margins, padding and borders-->
+        <div class="container container__heading__h2  h2--counter">
+            <h2 class='heading__2'>
+                <span class="heading__span">Margins, padding and borders</span>
+            </h2> 
+        </div>
+
+        <div class="container container__text">
+            <p>Border colour defaults to text colour.</p>
+            <p>Remember shorthand <br>
+            2 values: (top + bottom) (left+right) <br>
+            3 values: top (l&r) bottom</p>
+            <p>The values are clockwise.  </p>
+            <p>Border image slice (9 pieces). For using a gradient, always value of 1.</p>
+            <p>Turn the auto margin off by putting body {margin:0;}</p>
+            <p>Margin auto left or right only will add all available/unassigned space to that margin. It only works if you've allocated a width.</p>
+            <p>If we use <strong>auto</strong> on both the left and the right, it will centre the element on the page, but only if you've given the element a width. Text can be aligned with text-align.</p>
+            <p>margin: 0 auto; (but you can leave the 0 out because it just won't have an effect if not using grid or flex).</p>
+            <p>The total width and height of the box is content + padding+border+padding, so it can be easier to calculate by using border box, content box</p>
+            <p>To set margin sizes: start bigger and slowly reduce until you're happy.</p>
+            <p>The body only has the height of the content!  You need to set the height of the body to allow for vertical centring!</p>
+            
+        </div>
+
+        <div class="container container__heading__h3">
+            <h3 class="heading__3">
+                <span class="heading__span">Large screen sizes</span>
+            </h3>
+        </div>
+        
+        <div class="container container__text">
+            <p>Use a maximum width.  This doesn't need to be in a media query.  If you use .intro *, you are selecting everything inside the intro class.  You can also do .intro *, .main * for example. </p>
+        </div>
+        
+
+        <div class="container container__heading__h3">
+            <h3 class='heading__3'>
+                <span class="heading__span">Collapsing margins</span>
+            </h3> 
+        </div>
+
+        <div class="container container__text">
+            <p>All typographical elements come with a margin by default on the top and the bottom.  But collapsing margins: By default, margins will collapse on top of one another.This goes for margins that touch vertically and nested elements.</p>
+            <p>There are other situations where elements do not have their margins collapsed:</p>
+            <ul>
+             <li>absolutely positioned elements</li>   
+             <li>inline-block elements</li>
+             <li>floated elements</li>
+             <li>elements with overflow set to anything other than visible (They do not collapse margins with their children.)
+            <li>cleared elements (They do not collapse their top margins with their parent block’s bottom margin.)</li>
+            <li>the root element</li>
+            </ul>
+            <p>The nesting issue can be a problem.  In general the background-color will always be on the parent, so we can add padding to the parent to prevent the parent's margin merging with the child's (e.g. CSS Fundamentals no. 6)</p>    
+            <p>Margins no longer collapse in flexbox and grid.</p>
+        </div>
+
+        <!-- Typographical elements and their quirks.-->
+     
+        <div class="container container__heading__h3">
+            <h3 class='heading__3'>
+                <span class="heading__span">Typographical elements</span>
+            </h3> 
+        </div>
+
+        <div class="container container__text">
+            <p>The spacing between heading elements, as well as paragraphs, is controlled by the <span class = "codetype">margin-top</span> and <span class = codetype>margin-bottom</span> properties.</p>
+            <p>By default, the all have a margin-top and margin-bottom that is equal to their font-size (h1 a little bit smaller).</p>
+            <p>You can turn off the margin-top on typography related elements.</p>
+            <p>That way we can use padding on the parent and know the exact spacing that we'll have, and can keep all sides consistent.</p>
+
+            <p>To deal with this, use one selector, see the css file for this html.</p>
+            <p>Headings don't inherit font-weight because headings have some default stylings, as do links and form (elements).  You have to explicitely change these.  Use the property inherit if you want this to work differently.</p>
+        </div>
+
+        <div class="container container__heading__h3">
+            <h3 class='heading__3'>
+                <span class="heading__span">Large screen size typography</span>
+            </h3> 
+        </div>
+
+        <div class="container container__text">
+            <p>Set the font size in the media query body.  Also set h1 and h2 in the same way.</p>
+            <p>Text width should be around 45-75 characters, preferably 55-65 characters wide.</p>
+        </div>
+
+        <div class="container container__heading__h3">
+            <h3 class='heading__3'>
+                <span class="heading__span">Line height (leading)</span>
+            </h3> 
+        </div>
+
+        <div class="container container__text">
+            <p>For body/default line height, set 1.6 on body.  This will take font size and times it by 1.6.  It is the best general starting place.</p>
+            <p>It's not always the right answer.  2 is too much, because it's double spaced. 1.5-1.6 is a good general rule. </p>
+            <p>Exceptions: headings, small font size.  Start experimenting from 1 upwards.  The browser default is 1.4. </p>
+        </div>
+
+        <div class="container container__heading__h3">
+            <h3 class='heading__3'>
+                <span class="heading__span">letter-spacing(tracking)</span>
+            </h3> 
+        </div>
+
+        <div class="container container__text">
+            <p>Better to use pixels, not em or rem.  Often, putting 1 or 2 px.  Letter spacing usually on all cap text on a smaller size as well as really small fonts in general.</p>  
+            <p>Setting tracking can go well with text-transform.  
+        </div>
+
+        <div class="container container__heading__h3">
+            <h3 class='heading__3'>
+                <span class="heading__span">Font size and clamp</span>
+            </h3> 
+        </div>
+
+        <div class="container container__text">
+            <p>width: clamp(min, ideal, max)</p>
+            <p>Clamp font-size: clamp(22px , 9vw , 105px)}</p>
+        </div>
+
+        <div class="container container__heading__h3">
+            <h3 class='heading__3'>
+                <span class="heading__span">Large screen size typography</span>
+            </h3> 
+        </div>
+
+        <div class="container container__text">
+            <p>set the font size in the media query body.  Also set h1 and h2 in the same way.</p>
+        </div>
+
+        <div class="container container__heading__h2  h2--counter">
+            <h2 class='heading__2'>
+                <span class="heading__span">Units</span>
+            </h2> 
+        </div>
+
+        <div class="container container__text">
+            <p>Units. Percentages.  Units relative to font-size, units relative to viewport.</p>
+            <p>em and rem</p>
+            <p>vw, vh, vmin, vmax</p>     
+        </div>
+
+        <div class="container container__heading__h3">
+            <h3 class='heading__3'>
+                <span class="heading__span">Viewport Units</span>
+            </h3> 
+        </div>
+        
+        <div class="container container__text">
+            <p>vw, vh, vmin, vmax.</p>
+            <p>If you set a fixed width and height as a %, the height won't work.  This is because % is always based on the parent.  The heightof the parent is changing, so it won't really allow change. You can set a height on the body, of course.  But setting heights can be dangerous.  Instead, you could set a vh.</p>
+            <p>You can set the width based on the height (e.g. aspect ratio).</p>
+            <p>vmin: interacts with height and width - need more exploration.</p>
+            <p>vh 100% and the box model: use the * selector to change box-sizing to border-box.</p>
+        </div>
+
+        <div class="container container__heading__h3">
+            <h3 class='heading__3'>
+                <span class="heading__span">Em and rem</span>
+            </h3> 
+        </div>
+        
+        <div class="container container__text">
+             <p>Em and rem are considered relative because they are relative to the font-size of other elements.</p>
+             <p>em are relative to their parent's font-size.</p>
+             <p>1 em = match the font size of the parent.  1.5 em is the same as saying 150% of the font size of the parent.</p>    
+       </div>
+
+       <div class="container container__heading__h3">
+        <h3 class='heading__3'>
+            <span class="heading__span">Em % inheritance and cascade</span>
+        </h3> 
+    </div>
+    
+    <div class="container container__text">
+        <p>Because the font size of the parent is multiplied up, use rem for font size. The root of an HTML page is the html element.</p>
+        <p>Leave the html at the default (or use a %). In any case you only need to worry about actually setting the html font size.</p>
+        <p>Font-size is an inherited property, so if you don't declare it anywhere, it's getting it from the body (or the default, which is normally 16px)</p>
+        <p>If you set a pixel size for all text as a default, your H1-h6 will be affected, unless you set them separately as pixel sizes or other absolutes.</p>
+
+        <p>TO DO: typographical elements inherit loads.  What all are their special behaviours?</p>
+
+        <p>TO DO: a comparison between % and em for font sizes.</p>
+    </div>
+
+    <div class="container container__heading__h3">
+        <h3 class='heading__3'>
+            <span class="heading__span">Pixels</span>
+        </h3> 
+    </div>
+    
+    <div class="container container__text">
+        <p>Pixels can be used for more thngs now.</p>
+        <p>A pixel is no longer a pixel, it is a reference pixel.  </p>    
+        <p>For font size use rem, for padding and margin use em.  For widths em or percentage (or pixels).</p>
+        <p>For padding, start testing at 1em.</p>
+        <p>button padding becomes .5em 1.25em to scale it. Ems on the font size is looking at the parent.  For any other element, it is looking at its own font size.</p>
+    </div>
+
+    <div class="container container__heading__h2 h2--counter">
+            <h2 class='heading__2'>
+                <span class="heading__span">Selectors for basic needs</span>
+            </h2> 
+        </div>
+        
+        <div class="container container__text">
+            <p>see also <a href="https://webplatform.github.io/docs/guides/advanced_selectors_guide/">this guide</a> for more information</p>
+            <p>h2 +p : para following h2 <br>
+            .main-content > *: everything that is a direct child of main-content.  <br> .main-content > p: all ps that are a direct child of, etc.</p>
+            <p>Star selector * selects everything on the page</p>
+            <p>vh 100% and the box model: use the * selector to change box-sizing to border-box.</p>
+            <p>Use a maximum width.  This doesn't need to be in a media query.  If you use .intro *, you are selecting everything inside the intro class.  You can also do .intro *, .main * for example. <br>
+            h2 +p : para following h2 <br>
+            .main-content > *: everything that is a direct child of main-content.  <br> .main-content > p: all ps that are a direct child of, etc.</p>
+            <p>Another way to do this is to for example give everything a generic class name, like .container and split it to a level down separation, but this might break stuff.</p>
+            <p>The combinator element + selects the adjacent sibling.</p>
+            <p>~ selects any sibling.</p>    
+        </div>
+
+        <div class="container container__heading__h2 h2--counter">
+            <h2 class="heading__2">
+                <span class="heading__span">Compound selectors and specificity</span>
+            </h2>
+        </div>    
+    
+        <div class="container container__text">
+            <p>selector: 1 point, class: 10 points, id: 100 points.  Easiest way to avoid problems: give everything its own class.</p>
+            <p>You can always use 2 classes insead of 1.</p>       
+        </div>
+        <div class="container container__heading__h2 h2--counter">
+            <h2 class='heading__2'>
+                <span class="heading__span">Responsive navs</span>
+            </h2> 
+        </div>
+        
+        <div class="container container__text">
+            <p>Traditionaly speaking, ul in nav.  It is still there for amongst other things accessibility reasons.</p>
+            <p>Using flex in navs: notice that the li elements and how you are aligning them.  See notes in the css.</p>
+            <p>If you have a generic container div, it's better to put a modifier class on it to add flex. </p>
+            <p>Use last child pseudo liberally!</p>
+
+        </div>
+
+        <div class="container container__heading__h2 h2--counter">
+            <h2 class='heading__2'>
+                <span class="heading__span">Flexbox</span>
+            </h2> 
+        </div>
+        
+        <div class="container container__text">
+            <p>Default: each child will be a column and the children will shrink to fit their content.</p>
+            <p>You can set up flex as if you are calculating columns in the same way as you are calculating grid.</p>
+            <p>Display flex and grid collapsing margins no longer collapse.</p>
+            <p>Use e.g. order:-1; CHECK what order is in relation to.</p>
+            <p>Flexbox tip: when setting a flex box grid, set the horizontal margin to auto, saves using justify-content.</p>
+            <p>remember the useful order property for flex</p>
+            <p>Set up a separate class for generic flexbox settings</p>
+        </div>
+
+        <div class="container container__heading__h2 h2--counter">
+            <h2 class='heading__2'>
+                <span class="heading__span">Media queries</span>
+            </h2> 
+        </div>
+        
+        <div class="container container__text">
+            <p>Media types (speech, screen, print) for width, orientation, specific features.  Most commonly use and.  Remember orientation:portrait! <br>
+                @media (min-width: 500px) and (orientation: landscape) {
+                body {
+                    background: orange;
+                }
+                } </p>
+            <p>Recommended max width 1120px</p>
+            <p>Media queries should be talored to content, not to screen size.</p>
+        </div>
+
+
+        <div class="container container__heading__h2 h2--counter">
+            <h2 class='heading__2'>
+                <span class="heading__span">The form object</span>
+            </h2> 
+        </div>
+
+        <div class="container container__text">
+            <p>Browsers can't render POST requests, they can only render GET requests.  GET requests set in the URL, POST requests set in the body.</p>
+            <p>label for="name" (this will highlight input element)<br>
+            input type="text" name="name"<br>
+            label for="password (you can do this by wrapping the input in the label, this is good for checkboxes, radioboxes)<br>
+            input name="password" type="password"<br>
+            </p>
+            <p>
+            Button type="submit".  Is going to submit form and when we hit enter anywhere in the form it is also going to submit the form. Allows you to have other buttons in the form which don't necessarily submit.
+            </p>
+            <p>Button type="reset" sets everything back to default.</p>
+        </div>
+
+        <div class="container container__heading__h2  h2--counter">
+            <h2 class='heading__2'>
+                <span class="heading__span">Usability quick tips</span>
+            </h2> 
+        </div>
+
+        <div class="container container__text">
+
+            <ul class="marker-none">
+                <li>hover effect transitions 250ms</li>
+            </ul>
+        </div>
+
+        <div class="container container__heading__h2  h2--counter">
+            <h2 class='heading__2'>
+                <span class="heading__span">Accessibility</span>
+            </h2> 
+        </div>
+
+        <div class="container container__text">
+        <p>Don’t use uppercase text as TEXT, use <span class="codetype">css text-transform: uppercase;</span> property because screen readers spell the word out.</p>
+        <p>Underline text is meant for links, try to avoid using it just for the sake of visual coolness.</p>
+        <p>Keep check on colours, overlays and font sizes from accessibility point of view (contrast).</p>
+            
+
+
+
+
+
+        </div>
+        </div><!--END OF MAIN-->
+
+
+        <!--Footer-->
+        <div class="footer">
+            <p>Some text to create a footer with a little height.</p>
+        </div>
+    </div><!--END OF GRID-->
+
+
+
+    <script src='index.js'></script>
+</body>
+</html>
